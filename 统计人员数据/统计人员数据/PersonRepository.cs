@@ -8,9 +8,11 @@ namespace CDS000.Common
 {
     public class PersonRepository
     {
-        public static List<Person> InitialPersonCollection()
+        public List<Person> InitialPersonList()
+        //public static List<Person> InitialPersonCollection()
         {
             var persons = new List<Person>();
+            #region 初始化人员数据
             persons.Add(new Person { Name = "张小祎", Province = "北京", City = "北京", Sex = true, Birthday = DateTime.Parse("1964-09-08"), Email = "zhangxw@hotmail.com" });
             persons.Add(new Person { Name = "李珊柳", Province = "北京", City = "北京", Sex = false, Birthday = DateTime.Parse("1966-02-08"), Email = "lishsh@hotmail.com" });
             persons.Add(new Person { Name = "李华语", Province = "河北", City = "石家庄", Sex = true, Birthday = DateTime.Parse("1966-09-08"), Email = "lihy@hotmail.com" });
@@ -74,8 +76,10 @@ namespace CDS000.Common
             persons.Add(new Person { Name = "魏明翠", Province = "云南", City = "昆明", Sex = false, Birthday = DateTime.Parse("2000-09-08"), Email = "weimc@hotmail.com" });
             persons.Add(new Person { Name = "尹相杰", Province = "贵州", City = "贵阳", Sex = true, Birthday = DateTime.Parse("1993-09-08"), Email = "yinxj@hotmail.com" });
             persons.Add(new Person { Name = "张小祎", Province = "贵州", City = "凯里", Sex = false, Birthday = DateTime.Parse("1993-09-08"), Email = "zhangxw@163.com" });
+             #endregion
 
             return persons;
         }
+
     }
 }
